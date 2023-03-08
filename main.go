@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"net/http"
 	"strconv"
+	"strings"
 
 	"github.com/gin-gonic/gin"
 )
@@ -48,7 +49,7 @@ func isPalindromeUtil(inputan string) bool {
 	for a := lenInputan; a > 0; a-- {
 		parameter = parameter + string(inputan[a-1])
 	}
-	if inputan == parameter {
+	if strings.ToLower(inputan) == strings.ToLower(parameter) {
 		balikan = true
 	}
 	return balikan

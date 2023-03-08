@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "d2bf1708-fb60-481f-bae8-2447011cd482",
+		"name": "preTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getLanguage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/language",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"language"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addLanguage",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"language\": \"Go\",\r\n    \"appeared\": 2009,\r\n    \"created\": [\r\n        \"Robert Griesemer\",\r\n        \"Rob Pike\",\r\n        \"Ken Thompson\"\r\n    ],\r\n    \"functional\": true,\r\n    \"object-oriented\": false,\r\n    \"relation\": {\r\n        \"influenced-by\": [\r\n            \"C\",\r\n            \"Python\",\r\n            \"Pascal\",\r\n            \"Smalltalk\",\r\n            \"Modula\"\r\n        ],\r\n        \"influences\": [\r\n            \"Odin\",\r\n            \"Crystal\",\r\n            \"Zig\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/language/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"language",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"language\": \"Go\",\r\n    \"appeared\": 2009,\r\n    \"created\": [\r\n        \"Robert Griesemer\",\r\n        \"Rob Pike\",\r\n        \"Ken Thompson\"\r\n    ],\r\n    \"functional\": true,\r\n    \"object-oriented\": false,\r\n    \"relation\": {\r\n        \"influenced-by\": [\r\n            \"C\",\r\n            \"Python\",\r\n            \"Pascal\",\r\n            \"Smalltalk\",\r\n            \"Modula\"\r\n        ],\r\n        \"influences\": [\r\n            \"Odin\",\r\n            \"Crystal\",\r\n            \"Zig\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/language/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"language",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateLanguage",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"language\": \"Go2\",\r\n    \"appeared\": 2011,\r\n    \"created\": [\r\n        \"Robert Griesemer\",\r\n        \"Rob Pike\",\r\n        \"Ken Thompson\"\r\n    ],\r\n    \"functional\": true,\r\n    \"object-oriented\": false,\r\n    \"relation\": {\r\n        \"influenced-by\": [\r\n            \"C\",\r\n            \"Python\",\r\n            \"Pascal\",\r\n            \"Smalltalk\",\r\n            \"Modula\"\r\n        ],\r\n        \"influences\": [\r\n            \"Odin\",\r\n            \"Crystal\",\r\n            \"Zig\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/language/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"language",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteLanguage",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"language\": \"Go\",\r\n    \"appeared\": 2009,\r\n    \"created\": [\r\n        \"Robert Griesemer\",\r\n        \"Rob Pike\",\r\n        \"Ken Thompson\"\r\n    ],\r\n    \"functional\": true,\r\n    \"object-oriented\": false,\r\n    \"relation\": {\r\n        \"influenced-by\": [\r\n            \"C\",\r\n            \"Python\",\r\n            \"Pascal\",\r\n            \"Smalltalk\",\r\n            \"Modula\"\r\n        ],\r\n        \"influences\": [\r\n            \"Odin\",\r\n            \"Crystal\",\r\n            \"Zig\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/language/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"language",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "isPalindrome",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"language\": \"Go\",\r\n    \"appeared\": 2009,\r\n    \"created\": [\r\n        \"Robert Griesemer\",\r\n        \"Rob Pike\",\r\n        \"Ken Thompson\"\r\n    ],\r\n    \"functional\": true,\r\n    \"object-oriented\": false,\r\n    \"relation\": {\r\n        \"influenced-by\": [\r\n            \"C\",\r\n            \"Python\",\r\n            \"Pascal\",\r\n            \"Smalltalk\",\r\n            \"Modula\"\r\n        ],\r\n        \"influences\": [\r\n            \"Odin\",\r\n            \"Crystal\",\r\n            \"Zig\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/palindrome/putra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"palindrome",
+						"putra"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "helloGoDev",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
